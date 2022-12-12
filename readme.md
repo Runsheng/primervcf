@@ -30,7 +30,7 @@ Design primers based on the VCF file provided, parser the deletion, and force pr
 
 Use _C.briggsae_ QR25 strain as example. The fasta files and the vcf can be downloaded separately 
 from [cb5.fa](https://github.com/Runsheng/cbgenome/releases/download/cb5pre_cn3pre/cb5.fa.gz) and 
-from [QR25.vcf]()
+from [QR25.vcf](https://github.com/Runsheng/primervcf/files/10206263/QR25.vcf.gz). 
 
 
 Quick example
@@ -137,7 +137,7 @@ optional arguments:
 
 # this script require the bwa mem in your $PATH
 # which can be installed by "conda install -c bioconda bwa"
-# example
+# example, the SRR1793006 reads are from QR25 strain, can be downloaded from NCBI SRA database
 fq2vcf.py -f SRR1793006_1.fastq,SRR1793006_2.fastq -g cb5.fa -c 32
 ```
 
