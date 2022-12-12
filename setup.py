@@ -15,6 +15,7 @@ setup(
     author_email='runsheng.lee@gmail.com',
     description='primer design for haplotype genotyping using indel information',
     long_description=LONG_DESC,
+    long_description_content_type='text/markdown',
     install_requires = ["primer3-py>=0.6.1",
                         "biopython>=1.78",
                         "primerdiffer>=0.1.4",
