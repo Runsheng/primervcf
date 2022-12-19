@@ -10,7 +10,6 @@ python package:
 - pyssw >=0.1.4
 - primerdiffer >=0.1.4
 - biopython>=1.7.8
-- pyssw>=0.1.4
 
 other program in your $PATH:
 - ncbi-blast
