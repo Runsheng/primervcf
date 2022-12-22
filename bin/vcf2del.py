@@ -9,7 +9,7 @@ parser the vcf file, get a bed like list for deletion
 import argparse
 import os
 import sys
-from primervcf.primer_indel import get_deletion_region, bedl2file
+from primervcf.vcfparser import get_deletion_region, bedl2file
 
 parser=argparse.ArgumentParser()
 parser.add_argument("-d", "--wkdir", default=None,

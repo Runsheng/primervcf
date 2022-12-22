@@ -20,7 +20,8 @@ from primervcf.primer_indel import  primer3_general_settings
 from primerdiffer.utils import fasta2dic,dic2dic
 
 # self import
-from primervcf.primer_indel import flow_walk_deletion, file2bedl
+from primervcf.primer_indel import flow_walk_deletion
+from primervcf.vcfparser import file2bedl
 
 parser=argparse.ArgumentParser()
 parser.add_argument("-d", "--wkdir", default=None,

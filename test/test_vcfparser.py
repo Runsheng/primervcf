@@ -37,13 +37,12 @@ class TestPrimerCheck(unittest.TestCase):
 
     def test_get_del_svcaller(self):
         # caller from SV do not use indel, but use INS and DEL
-        wkdir = "/t1/ref_BN/vcf/SRR1793006"
+        wkdir=("./SV")
         os.chdir(wkdir)
-        vcf_file = "QR25.vcf"
-        QR25 = get_deletion_region(vcf_file, key="del", len_cutoff=10)
-        print(len(QR25))
-        print(QR25[1:10])
-        bedl2file(QR25, "QR25_del.bed")
+        vcf_file = "sv.vcf"
+        sv= get_deletion_region(vcf_file, key="del", len_cutoff=10)
+        print(len(sv))
+        bedl2file(sv, "sv_del.bed")
 
 
 

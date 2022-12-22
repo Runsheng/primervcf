@@ -82,7 +82,11 @@ def get_deletion_region(vcf_file, key="del", len_cutoff=10):
     bed_l=[]
     vcf_reader = vcf.Reader(open(vcf_file, 'r'))
     for record in vcf_reader:
-        if record.var_subtype==key and record.aaf[0]==1:  # choose only the homo deletion
+        print(record)
+        print(record.var_subtype)
+        print(record.aaf)
+        print(int(record.aaf[0])==1)
+        if record.var_subtype.lower()==key and int(record.aaf[0])==1:  # choose only the homo deletion
             alt_seq=record.ALT[0]
             del_len=len(record.REF)-len(alt_seq)
             if del_len>=len_cutoff and "n" not in record.REF: # no gap in the reference
