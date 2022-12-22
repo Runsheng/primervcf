@@ -24,7 +24,7 @@ conda install -c bioconda blast # install ncbi blast, which is not included in p
 ## Walkthrough
 Design primers based on the VCF file provided, parser the deletion, and force primers to overalp the deletion 
 - Check all long indel regions (>=indel_cutoff, default is 10) to design primers.
-- Check local region to make sure the vcf is not 
+- Check local region to make sure the indel is not a local tamdem repeat (using ssw alignment).
 - Use the whole genome (--genome1) as db to make a specificity check, to ensure the primer can only amplify one region.
 - The dis-similarity between genome and the strain could be individual/strain/population level (<=1%).   
 
