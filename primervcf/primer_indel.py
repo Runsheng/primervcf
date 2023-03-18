@@ -23,7 +23,6 @@ def has_local_hit(primer, seq, cutoff_alignlength, cutoff_free3, debugmod=False)
     aligner = Aligner(seq, report_cigar=True)
     aln = aligner.align(primer)
     cigar = parse_cigar(aln.cigar_string)
-
     M = cigar_getlen(cigar)
     free3 = cigar_getfree3(cigar)
 
