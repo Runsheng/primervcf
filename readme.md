@@ -1,13 +1,14 @@
 #  **primervcf** package
-![PyPI](https://img.shields.io/pypi/v/primervcf?color=green)
+<a href="https://pypi.python.org/pypi/primervcf" rel="pypi">![PyPI](https://img.shields.io/pypi/v/primervcf?color=green) </a>
+<a href="http://www.gnu.org/licenses/gpl-2.0.html" rel="license">![License](https://img.shields.io/pypi/l/primervcf?color=orange)</a>
 
 ## Installation:
-The package worked with python version >=3.4.
+The package worked with python version >=3.8.
 Only tested in linux x64 system.
 
 python package:
 - primer3-py>=0.6.1
-- pyssw >=0.1.4
+- pyssw >=0.1.7
 - primerdiffer >=0.1.4
 - biopython>=1.7.8
 - PyVCF3>=1.0.3
