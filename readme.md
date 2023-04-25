@@ -141,6 +141,10 @@ optional arguments:
 # example, the SRR1793006 reads are from QR25 strain, can be downloaded from NCBI SRA database
 fq2vcf.py -f SRR1793006_1.fastq,SRR1793006_2.fastq -g cb5.fa -c 32
 ```
+## Citation:
+Please kindly cite our paper in bioinformatics if you find primerdiffer or primervcf useful in your work: [Link to publication](https://academic.oup.com/bioinformatics/article/39/4/btad188/7126407).
+
+ **Ren, X., Shao, Y., Zhang, Y., Ni, Y., Bi, Y., & Li, R. (2023). Primerdiffer: a python command line module for large-scale primer design in haplotype genotyping. Bioinformatics, btad188.**
 
 
 
