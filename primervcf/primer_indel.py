@@ -8,7 +8,7 @@
 use the long indel information to design hyplotype specific primers
 """
 
-from primerdiffer.utils import reverse_complement, chr_select
+from primerdiffer.utils import reverse_complement, chr_select, checkblastdb
 from primerdiffer.primer_check import insilicon_pcr
 from primerdiffer.general_settings import primer3_general_settings
 
@@ -134,6 +134,7 @@ def flow_walk_deletion(ref_dict, db, deletion_bedlist, prefix="primers",
     """
     primer_dict = {}
     f_out = open(prefix + ".txt", "w")
+    checkblastdb(db)
 
     left, right, product_size = (0, 0, 0)
     for del_single in deletion_bedlist:
