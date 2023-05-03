@@ -20,7 +20,7 @@ parser.add_argument("-f", "--file",
 parser.add_argument("-o", "--out",default="del.out",
                     help="bed file output")
 # len cutoff
-parser.add_argument("-l", "--length",default=10,
+parser.add_argument("-l", "--length",default=10,type=int,
                     help="the min length for a deletion to be used, default is 10")
 
 args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])

@@ -26,7 +26,7 @@ parser.add_argument("-p", "--prefix",default="raw",
                     help="the outvcf filename prefix, default is using the file prefix of fastq")
 
 # performace
-parser.add_argument("-c", "--core",
+parser.add_argument("-c", "--core",type=int,
                     help="the core used for bwa mem mapping and samtools sort")
 
 
